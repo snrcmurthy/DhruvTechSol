@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dhruv Technology Solutions LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logo.svg" alt="Dhruv Technology Solutions Logo" class="logo-icon">
+                    <span>Dhruv Technology Solutions</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta active">Book a Consultation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Let's Start a Conversation</h1>
+            <p class="page-subtitle">Schedule your complimentary AI strategy consultation</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p class="contact-intro">Whether you're exploring AI for the first time or scaling existing capabilities, we're here to help you navigate the path forward.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@dhruvtechsolutions.com">info@dhruvtechsolutions.com</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Response Time</h3>
+                            <p>We typically respond within 24 hours during business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="consultation-info">
+                        <h3>What to Expect</h3>
+                        <p>During your free initial consultation, we'll:</p>
+                        <ul>
+                            <li>Discuss your business objectives and current challenges</li>
+                            <li>Explore potential AI use cases relevant to your industry</li>
+                            <li>Assess your technical readiness and data infrastructure</li>
+                            <li>Outline potential approaches and next steps</li>
+                            <li>Answer your questions about AI implementation</li>
+                        </ul>
+                        <p class="consultation-note">No sales pressure, no obligations—just strategic insights you can use whether you work with us or not.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Book Your Free AI Strategy Session</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">Your Role</label>
+                            <input type="text" id="role" name="role" placeholder="e.g., CTO, VP Operations, CEO">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Primary Area of Interest *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select a service...</option>
+                                <option value="ai-consulting">AI Consulting & Strategy</option>
+                                <option value="predictive-analytics">Predictive Analytics & Data Services</option>
+                                <option value="cybersecurity">AI-Driven Cybersecurity</option>
+                                <option value="automation">Intelligent Automation & RPA</option>
+                                <option value="generative-ai">Generative AI Development</option>
+                                <option value="conversational-ai">Conversational AI & Customer Support</option>
+                                <option value="computer-vision">Computer Vision Services</option>
+                                <option value="ai-hr">AI-Powered HR & Recruitment</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Project *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="What business challenges are you looking to solve? What are your goals for AI implementation?" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Preferred Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline...</option>
+                                <option value="immediate">Immediate (within 1 month)</option>
+                                <option value="short-term">Short-term (1-3 months)</option>
+                                <option value="medium-term">Medium-term (3-6 months)</option>
+                                <option value="long-term">Long-term (6+ months)</option>
+                                <option value="exploratory">Just exploring options</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Request Free Consultation</button>
+                        
+                        <p class="form-privacy">We respect your privacy. Your information will never be shared with third parties.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does a typical AI project take?</h3>
+                    <p>Project timelines vary based on complexity and scope. A focused automation project might take 6-12 weeks, while comprehensive AI transformation initiatives typically span 3-6 months. We provide detailed timelines during the strategy phase.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need to have data scientists on staff?</h3>
+                    <p>No. We handle the technical implementation and can train your existing team to maintain the systems we build. Many of our clients have no in-house AI expertise when they start working with us.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What industries do you work with?</h3>
+                    <p>We work across industries including healthcare, finance, manufacturing, retail, and professional services. Our approach focuses on understanding your specific business context rather than applying generic industry templates.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you ensure data security?</h3>
+                    <p>We follow industry-standard security protocols including encryption, access controls, and compliance with relevant regulations (GDPR, HIPAA, etc.). Security and privacy are built into our solutions from day one, not added as afterthoughts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dhruv Technology Solutions LLC</h4>
+                    <p>Enterprise AI consulting and custom software development for forward-thinking organizations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#ai-consulting">AI Consulting</a></li>
+                        <li><a href="services.html#predictive-analytics">Predictive Analytics</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#automation">Automation & RPA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhruv Technology Solutions LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            alert('Thank you for your interest! In a production environment, this form would submit to your backend service or email system. For now, please email us directly at info@dhruvtechsolutions.com');
+        });
+    </script>
+</body>
+</html>

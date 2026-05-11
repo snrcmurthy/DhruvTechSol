@@ -1,0 +1,20 @@
+{
+  "name": "dhruv-technology-solutions",
+  "version": "1.0.0",
+  "description": "AI & IT Consulting Services Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "AI",
+    "consulting",
+    "technology",
+    "automation",
+    "machine-learning"
+  ],
+  "author": "Dhruv Technology Solutions LLC",
+  "license": "UNLICENSED",
+  "private": true
+}
