@@ -137,7 +137,7 @@ Use these tools to test your website security:
 ### 13. Contact for Security Issues
 
 If you discover a security vulnerability, please report it to:
-- Email: security@dhruv-tech-solutions.com
+- Email: 51221487@dhruvtechsol.ai
 - Do not publicly disclose until patched
 
 ## Compliance

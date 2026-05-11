@@ -85,7 +85,7 @@ The contact form currently shows an alert message. To make it functional:
 
 To customize for production:
 
-1. Replace `info@dhruvtechsolutions.com` with actual email
+1. Email configured: 51221487@dhruvtechsol.ai
 2. Add real company contact information
 3. Integrate analytics (Google Analytics, etc.)
 4. Set up form backend
