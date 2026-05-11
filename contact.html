@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -129,6 +130,19 @@
                             </select>
                         </div>
 
+                        <!-- Honeypot field for bot protection -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- reCAPTCHA widget -->
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            <small style="color: #6B7280; font-size: 12px; margin-top: 8px; display: block;">
+                                Please verify you're human by checking the box above
+                            </small>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-large">Request Free Consultation</button>
                         
                         <p class="form-privacy">We respect your privacy. Your information will never be shared with third parties.</p>
@@ -197,6 +211,21 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Check if reCAPTCHA is completed
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                alert('Please verify that you are human by completing the reCAPTCHA challenge.');
+                return;
+            }
+            
+            // Check honeypot field (should be empty)
+            const honeypot = this.querySelector('input[name="_gotcha"]');
+            if (honeypot && honeypot.value) {
+                // Bot detected, silently fail
+                console.log('Bot detected');
+                return;
+            }
+            
             // Form will be submitted to Formspree which forwards to 51221487@dhruvtechsol.ai
             const formData = new FormData(this);
             
@@ -210,6 +239,7 @@
                 if (response.ok) {
                     alert('Thank you for your inquiry! We will respond to your request within 24 hours at the email address you provided.');
                     this.reset();
+                    grecaptcha.reset(); // Reset reCAPTCHA
                 } else {
                     alert('There was an issue submitting your form. Please email us directly at 51221487@dhruvtechsol.ai');
                 }
