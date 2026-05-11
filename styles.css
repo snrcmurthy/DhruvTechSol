@@ -474,7 +474,7 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(312.5px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 60px;
     margin-bottom: 50px;
 }
